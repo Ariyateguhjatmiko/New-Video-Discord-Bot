@@ -1,12 +1,13 @@
 import discord
 import asyncio
 import feedparser
+import os
 from discord.ext import commands
 
 # ===== CONFIG =====
-TOKEN = 'MTM4NTc5Mjg5NTA0MjMyNjY0MQ.GdGTgm.B34TgmcXvRGCtYi8yICr3CfzM8Wxz46KuVq5tc'
-CHANNEL_ID = 1385556607726911648  # ID channel Discord tujuan
-YOUTUBE_RSS = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCGDirlA9l0kz9MPuZGVsYMA'
+TOKEN = os.environ["DISCORD_TOKEN"]
+CHANEL_ID = os.environ["CHANEL_ID"] # ID channel Discord tujuan
+YOUTUBE_RSS = os.environ["YOUTUBE_RSS"]
 
 # ===== SETUP BOT =====
 intents = discord.Intents.default()
