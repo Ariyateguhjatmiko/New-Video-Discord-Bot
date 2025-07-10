@@ -2,7 +2,6 @@ import discord
 import asyncio
 import feedparser
 from discord.ext import commands
-from keep_alive import keep_alive
 
 # ===== CONFIG =====
 TOKEN = 'MTM4NTc5Mjg5NTA0MjMyNjY0MQ.GdGTgm.B34TgmcXvRGCtYi8yICr3CfzM8Wxz46KuVq5tc'
@@ -77,5 +76,4 @@ async def sendvideoinfo(ctx):
         await ctx.send(f"Gagal ambil video: {e}")
 
 # ===== JALANKAN BOT =====
-keep_alive()
 bot.run(TOKEN)
